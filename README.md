@@ -6,6 +6,8 @@ MursaatPanel will replace your traditional Experience Bar with a more configurab
 
 ![mursaat_panel](https://github.com/user-attachments/assets/f3301233-493e-47ea-a9c1-ee1606553950)
 
+MursaatPanel starts with a bottom panel. In the options you can enable an additional top panel, and hide the bottom panel, to fully customize your experience.
+
 The following widgets are available:
 - Level & Experience
 - Mastery Levels
@@ -23,6 +25,15 @@ MursaatPanel can be installed via the Nexus addon library. You can also download
 
 MursaatPanel will store its settings under `<gw2install>/addons/MursaatPanel`.
 
+**Important:** MursaatPanel alters the way some of the native UI elements are displayed. To reflect all the changes the addon makes, a full UI refresh is needed. The easiest way to trigger this is by loading into a different map. The same applies to whenever you unload MursaatPanel, the UI will only fully restore after a full refresh.
+
+# Using MursaatPanel
+After installation, you will see an empty panel at the bottom. In the options you can configure an additional top panel.
+
+By right clicking on either of the panels, a context menu opens that allows you to add widgets for the respective categories.
+
+After adding a widget, you can customize its appearance by right clicking on the widget. You can set the panel, alignment and order priority, as well as hide it again. Some widgets may allow for further customization.
+
 # FAQ & Known Issues
 
 ### After installing, the original experience bar is visible behind the panel, why?
@@ -32,13 +43,14 @@ This means that after installing, you will see the original experience bar until
 ### After uninstalling, the original experience bar remains hidden, why?
 Same as above, the experience bar will continue its working on a full refresh, usually triggered by a map change.
 
+### I am using the Top Panel. The icons for Nexus and BlishHUD are still rendered on top.
+For Nexus: in the Nexus options you can configure an offset. Ideally you set the Y-Offset to whatever your bar height is set to.
+
+For BlishHUD: at this time I can give no support due to me not using the overlay. The best course might be engaging with Delta and the Blish-Developers directly to make the NexusShim-Module take into account the offset settings as well.
+
 ### Widgets are being weirdly positioned; What gives?
 The addon was developed with 1080p, small UI scaling and a Nexus scaling of 1.0 in mind. Other factors might be UI customizations like margins or paddings that are not accounted for. Another thing might be font and font size.
 MursaatPanel offers some settings to help with general appearance, but is far from perfect on resolving everything. You can help improving MursaatPanel by reporting any weird rendering issues on the Raidcore.gg Discord!
-
-### Tooltips of the game get stuck whenever I hover over the panel, why?
-This is a known minor issue; when you hover over MursaatPanel, no further information of your mouse cursor position is being sent to Guild Wars 2. If a popup was being rendered during that moment, the game will still think your mouse has not left that position and will keep rendering the popup.
-There is no workaround for this behavior as of now.
 
 ### Is the addon safe to use after a game update?
 Generally speaking, there are some precautionary measures in place to help not breaking whenever Guild Wars 2 updates. However, sometimes things will change around a lot. The addon will log every failed interaction with the game to the Nexus log.
