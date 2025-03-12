@@ -59,8 +59,6 @@ Here is a simple implementation for a standalone addon. It defines the required 
 #ifndef WIDGET_H
 #define WIDGET_H
 
-#include <string>
-
 struct RenderOptions {
     float iconWidth;
     float iconHeight;
