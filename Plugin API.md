@@ -56,7 +56,6 @@ Here is a simple implementation for a standalone addon. It defines the required 
 
 **Widget.h**
 ```c++
-@ -0,0 +1,31 @@
 #ifndef WIDGET_H
 #define WIDGET_H
 
@@ -91,7 +90,6 @@ float GetWidth();
 ```
 **Widget.cpp**
 ```c++
-@@ -0,0 +1,25 @@
 #include "Widget.h"
 #include "imgui/imgui.h"
 
