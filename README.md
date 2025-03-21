@@ -17,6 +17,13 @@ The following widgets are available:
 - Location with sectorname and coordinates
 - Inventory Bag space
 - System stats (FPS, Ping, Memory Usage)
+- World vs. World status
+  - Skirmish & Match scores
+  - K/D ratio
+  - Participation timer
+  - Reward Track
+  - Pips Target Calculator
+- Map & World Completion 
 
 Something you want to see is missing? Post a suggestion on the Raidcore.gg Discord: https://discord.gg/raidcore
 
